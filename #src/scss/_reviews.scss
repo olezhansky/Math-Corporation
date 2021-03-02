@@ -1,6 +1,6 @@
 .reviews {
     padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     background-color: rgb(213, 226, 231);
     // background-image: url(../img/reviews/reviews.jpg); 
     background-image: linear-gradient(
@@ -23,13 +23,13 @@
     margin-right: auto;
   }
   .gallery-top {
-    margin-top: 37px;
+    margin-top: 70px;
     height: 300px;
     width: 100%;
   }
   .gallery-top .swiper-slide img {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 10px rgba(12, 26, 109, 0.7);
   }
@@ -65,7 +65,7 @@
     cursor: pointer;
   }
   .button-prev:hover {
-    background-color: #18CFAB;
+    background-color: blue;
     color: #fff;
   }
   .button-prev-img {
@@ -86,7 +86,7 @@
     top: -75px;
     right: 28%;
     width: 31px;
-    border: 1px solid blue; 
+    border: 1px solid #BBBBBB; 
     outline: none;
     text-align: center;
     cursor: pointer;
@@ -96,7 +96,7 @@
     color: #BBBBBB;
   }
   .button-next:hover {
-    background-color: #18CFAB;
+    background-color: blue;
     color: #fff;
   }
   .button-next-img {
@@ -116,7 +116,7 @@
     font-size: 16px;
     line-height: 30px;
     font-weight: 300;
-    color: blue;
+    color: #fff;
   }
   .swiper-slide-person {
     margin-top: 10px;

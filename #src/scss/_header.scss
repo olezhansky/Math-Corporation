@@ -28,11 +28,25 @@
         display: flex;
     }
     &__menu-item {
-        color: #fff;
         text-transform: uppercase;
     }
     &__menu-item + &__menu-item {
         margin-left: 30px;
+    }
+    &__menu-link {
+        color: #fff;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-bottom: 24px;
+        border-bottom: 2px solid transparent;
+        transition: .3s;
+        
+        &:hover {
+            color: rgb(68, 68, 201);
+            border-bottom: 2px solid rgb(68, 68, 201);
+        }
     }
     &__content-inner {
         display: flex;
