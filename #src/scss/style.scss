@@ -1,0 +1,38 @@
+// Null styles
+@import "null.scss";
+@import "_var.scss";
+
+// General styles
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    color: #fff;
+}
+.container {
+    width: 1160px;
+    margin: 0 auto;  
+    padding: 0 15px;
+}
+// Header 
+@import "_header.scss";
+
+// About 
+@import "_about.scss";
+// Process
+@import "_process.scss";
+// Gallery
+@import "_gallery.scss";
+// Team
+@import "_team.scss";
+// Cenetr
+@import "_center.scss";
+// Reviews
+@import "_reviews.scss"
+
+
