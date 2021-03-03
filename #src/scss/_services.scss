@@ -13,8 +13,8 @@
         line-height: 40px;
         color: #717171;
         padding: 16px 48px;
-        background-color: #F8FCFE;
-        box-shadow: 0px 0px 0px 1px #EDEFEF;
+        background-color: lightgrey;
+        box-shadow: 0px 0px 0px 2px grey;
         border: 2px solid transparent;
         cursor: pointer;
         position: relative;
@@ -24,7 +24,8 @@
         }
     }
     &__menu-item:hover {
-        border: 2px solid #15708b;
+        // border: 2px solid #15708b;
+        box-shadow: 0px 0px 0px 2px #15708b;
     }
     &__menu-item--active {
         background-color: #15708b;
