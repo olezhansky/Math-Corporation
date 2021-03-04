@@ -2,13 +2,19 @@
     padding: 100px 0;
     background-color: rgb(213, 226, 231);
     // background-color: rgb(144, 150, 247);
+    &__text {
+        margin-top: 45px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+    }
     &__items {
         padding: 0 50px;
+        margin-top: 80px;
         display: flex;
         justify-content: space-between;
     }
     &__item {
-        margin-top: 100px;
         max-width: 300px;
         text-align: center;
         background-color: #fff;
