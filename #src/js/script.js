@@ -78,3 +78,25 @@ var galleryTop = new Swiper('.gallery-top', {
     };
     buttonsTab.addEventListener('click', changeTabsOnClick);
 }());
+
+// Button top
+(function(){
+  const btnTopEl = document.querySelector('.header__menu-btn-top');
+  function tracScroll() {
+    if (window.pageYOffset > 250) {
+      btnTopEl.style.display = 'block';
+    } else {
+      btnTopEl.style.display = 'none';
+    }
+  }
+  function btnToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -45);
+      setTimeout(btnToTop, 0)
+    }
+  }
+  window.addEventListener('scroll', tracScroll);
+  btnTopEl.addEventListener('click', btnToTop);
+}());
+
+
