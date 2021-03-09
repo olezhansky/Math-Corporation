@@ -1,5 +1,5 @@
 .services {
-    padding-top: 83px;
+    padding-top: 50px;
     padding-bottom: 91px;
     background-color: lightgrey;
     &__content {
@@ -14,22 +14,22 @@
         line-height: 40px;
         color: #717171;
         padding: 16px 48px;
-        background-color: lightgrey;
+        background-color: #fff;
         box-shadow: 0px 0px 0px 2px grey;
         border: 2px solid transparent;
         cursor: pointer;
         position: relative;
         margin-right: 5px;
+        font-family:  $secondary-font;
         &:last-child {
             margin-right: 0;
         }
     }
     &__menu-item:hover {
-        // border: 2px solid #15708b;
-        box-shadow: 0px 0px 0px 2px #15708b;
+        box-shadow: 0px 0px 0px 2px $third-color;
     }
     &__menu-item--active {
-        background-color: #15708b;
+        background-color: $third-color;
         color: #fff;
         position: relative;
     }

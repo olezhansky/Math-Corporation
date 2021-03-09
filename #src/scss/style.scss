@@ -6,11 +6,12 @@
 // General styles
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     color: #000;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
 }
 a {
     color: #fff;
@@ -19,6 +20,34 @@ a {
     width: 1160px;
     margin: 0 auto;  
     padding: 0 15px;
+}
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-family: $secondary-font;
+    letter-spacing: 1.5px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 46%;
+        width: 80px;
+        height: 3px;
+        background-color: #4965a6;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 47px;
+        left: 48%;
+        width: 80px;
+        height: 3px;
+        background-color: #4965a6;
+    }
 }
 // Header 
 @import "_header.scss";

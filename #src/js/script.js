@@ -35,7 +35,7 @@ var galleryTop = new Swiper('.gallery-top', {
     const buttonsTab = document.querySelector('.services__menu');
     const COLOR_TAB_1= '#fff';
     const COLOR_TAB_2= '#717171';
-    const BACKGROUND_COLOR_TAB_1= '#15708b';
+    const BACKGROUND_COLOR_TAB_1= '#4965a6';
     const BACKGROUND_COLOR_TAB_2 = '#F8FCFE';
     function changeTabsOnClick(event) {
         if (event.target.className == 'services__menu-item') {
@@ -75,8 +75,7 @@ var galleryTop = new Swiper('.gallery-top', {
   }
   function btnToTop() {
     if (window.pageYOffset > 0) {
-      window.scrollBy(0, -45);
-      setTimeout(btnToTop, 0)
+      window.scrollTo(0, 0);
     }
   }
   window.addEventListener('scroll', tracScroll);

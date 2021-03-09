@@ -1,7 +1,7 @@
 .about {
     padding-top: 30px;
     padding-bottom: 50px;
-    background-color: $white-color;
+    background-color: #fff;
     &__content {
         margin-top: 50px;
         display: flex;
@@ -21,29 +21,5 @@
         color: #000;
     }
 }
-.title {
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        top: 40px;
-        left: 48%;
-        width: 80px;
-        height: 3px;
-        background-color: blue;
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        top: 47px;
-        left: 50%;
-        width: 80px;
-        height: 3px;
-        background-color: blue;
-    }
-}
+
 

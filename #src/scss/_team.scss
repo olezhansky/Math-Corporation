@@ -1,6 +1,6 @@
 .team {
-    padding: 100px 0;
-    background-color: rgb(213, 226, 231);
+    padding: 50px 0 100px;
+    background-color: lightgray;
     // background-color: rgb(144, 150, 247);
     &__text {
         margin-top: 45px;
@@ -18,7 +18,7 @@
         max-width: 300px;
         text-align: center;
         background-color: #fff;
-        box-shadow: 10px 10px 5px 0px rgba(17, 24, 114, 0.8);
+        box-shadow: 10px 10px 5px 0px $third-color;
         border-radius: 5%;
         position: relative;
         transition: all .3s;
@@ -33,8 +33,7 @@
     }
     &__item-title {
         padding-top: 15px;
-
-        color: rgba(17, 24, 114, 0.8);
+        color: $third-color;
         font-size: 18px;
         font-weight: 700;
     }
@@ -47,7 +46,7 @@
         margin-top: 5px;
         font-size: 14px;
         line-height: 18px;
-        color: $grey-color;
+        color: $secondary-color;
     }
     &__social-network {
         opacity: 0;
