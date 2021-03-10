@@ -14,12 +14,17 @@
     background-attachment: fixed;
     &__top {
         background-color:rgba(73, 72, 72, 0.8);
+        z-index: 10;
+        &--active {
+            background-color: grey;
+            transition: .3s;
+        }
     }
     &__top-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
+        padding: 15px 0;
        
     }
     &__menu-btn-top {
@@ -41,6 +46,44 @@
         .fa-long-arrow-alt-up {
             color: #fff;
             font-size: 25px;
+        }
+    }
+    &__menu-burger {
+        display: none;
+        cursor: pointer;
+        right: 20px;
+        top: 20px;
+        z-index: 60;
+        overflow: hidden;
+        position: absolute;
+        top: 40px;
+        &-line {
+            border-radius: 5px;
+            transition: all 0.3s;
+            height: 3px;
+            width: 26px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 6px;
+            z-index: 5;
+        }
+        &-line:last-child {
+            margin-bottom: 0px;  
+        }
+        &-line--first {
+            width: 15px;  
+            transform: translateX(11px);
+        }
+        .first {
+            transform: translate(0px, 10px) rotate(45deg);
+            width: 26px;
+        }
+        .middle {
+            transform: scale(0);
+        }
+        .last {
+            transform: translate(-1px, -8px)rotate(-45deg);
+            z-index: 5;
         }
     }
     &__menu-list {

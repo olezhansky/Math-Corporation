@@ -17,7 +17,7 @@ a {
     color: #fff;
 }
 .container {
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;  
     padding: 0 15px;
 }
@@ -70,6 +70,10 @@ a {
 @import "_contacts.scss";
 // Footer
 @import "_footer.scss";
+
+// Adaptive
+// Header adaptive
+@import "_header-media.scss";
 
 
 
