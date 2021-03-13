@@ -1,26 +1,25 @@
 .schedule {
     padding: 25px 0;
     text-align: center;
-}
-
-.schedule__table {
-    margin: 50px auto 0;
-    border: 5px solid $third-color;
-}
-.schedule__table-header {
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: 700;
-    background-color: lightgrey;
-}
-.schedule__table-header th {
-    padding: 20px 30px;
-    border: 2px solid grey;
-}
-.schedule__table-main td {
-    padding: 20px 30px;
-    border: 2px solid grey;
-}
-.shedule__table-main--col-1 {
-    background-color: lightblue;
+    &__table {
+        margin: 50px auto 0;
+        border: 5px solid $third-color;
+    }
+    &__table-header {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 700;
+        background-color: lightgrey;
+    }
+    &__table-header th {
+        padding: 20px 30px;
+        border: 2px solid grey;
+    }
+    &__table-main td {
+        padding: 20px 30px;
+        border: 2px solid grey;
+    }
+    &_table-main--col-1 {
+        background-color: lightblue;
+    }
 }

@@ -9,13 +9,13 @@
         line-height: 22px;
     }
     &__items {
-        padding: 0 50px;
         margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-column-gap: 30px;
     }
     &__item {
-        max-width: 300px;
+        max-width: 260px;
         text-align: center;
         background-color: #fff;
         box-shadow: 10px 10px 5px 0px $third-color;
@@ -39,11 +39,12 @@
     }
     &__item-img {
         margin-top: 10px;
-        width: 200px;
+        max-width: 160px;
         border-radius: 50%;
     }
-    .team__item-text {
+    &__item-text {
         margin-top: 5px;
+        padding: 0 10px;
         font-size: 14px;
         line-height: 18px;
         color: $secondary-color;

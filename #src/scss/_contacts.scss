@@ -19,11 +19,13 @@
         justify-content: space-between;
     }
     &__info {
-        max-width: 360px;
+        max-width: 260px;
     }
     &__text {
         color: #d3d2d2;
         margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 20px;
     }
     &__list {
         margin-top: 25px;
@@ -68,23 +70,23 @@
         }
     }
     &__form {
-        width: 640px;
-        // margin-right: 106px;
-       
+        width: auto;
+        margin-right: 50px;
     }
     &__form-title {
-        font-size: 21px;
+        font-size: 22px;
         line-height: 24px;
         margin: 0 0 13px;
         color: #fff;
     }
     &__form-text {
-        flex: 15px;
+        font-size: 18px;
         line-height: 18px;
         margin: 0 0 12px;
         color: #fff;
     }
     &__form-line {
+        max-width: 500px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
@@ -92,7 +94,7 @@
     &__form-input,
     &__form-textarea {
     border: none;
-    padding: 15px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.5);
     font-size: 13px;
     line-height: 15px;

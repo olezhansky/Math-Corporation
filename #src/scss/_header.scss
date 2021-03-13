@@ -43,6 +43,7 @@
         cursor: pointer;
         text-align: center;
         display: none;
+        z-index: 50;
         .fa-long-arrow-alt-up {
             color: #fff;
             font-size: 25px;
@@ -151,3 +152,15 @@
         }
     }
 }
+
+
+.swiper-containerr {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 28px;
+  }
