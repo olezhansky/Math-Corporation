@@ -31,7 +31,7 @@
   });
 })();
 
-var swiper = new Swiper('.swiper-containerr', {
+var swiper = new Swiper('.header__content-slider', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
