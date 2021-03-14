@@ -145,6 +145,10 @@
         opacity: 1;
         visibility: visible;
     }
+    &__menu-list-drop:hover .header__menu-link {
+        color: rgb(68, 68, 201);
+        border-bottom: 4px solid rgb(68, 68, 201);
+    }
     &__menu-list-drop::after {
         content: '';
         position: absolute;

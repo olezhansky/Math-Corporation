@@ -1,6 +1,8 @@
 // Null styles
 @import "null.scss";
 @import "_var.scss";
+@import "_jquery.fancybox.scss";
+@import "_modal.scss";
 
 
 // General styles
@@ -72,8 +74,7 @@ a {
 @import "_footer.scss";
 
 // Adaptive
-// Header adaptive
-@import "_header-media.scss";
+@import "_adaptive.scss";
 
 
 
