@@ -4,5 +4,6 @@
 @@include('_reviews.js')
 @@include('_burgerMenu.js')
 @@include('jquery.fancybox.js')
+@@include('_language.js')
 
 
