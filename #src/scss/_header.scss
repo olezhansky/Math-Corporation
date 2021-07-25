@@ -12,19 +12,25 @@
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    &__logo {
+        padding-left: 15px;
+    }
     &__top {
-        background-color:rgba(73, 72, 72, 0.8);
+        background-color:rgba(73, 72, 72, 0.9);
+        position: fixed;
+        transition: all .3s;
+        width: 100%;
         z-index: 10;
         &--active {
-            background-color: grey;
-            transition: .3s;
+            transition: all .3s;
         }
     }
     &__top-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 0;
+        padding: 10px 0 5px;
+        position: relative;
        
     }
     &__menu-btn-top {
@@ -102,12 +108,12 @@
         line-height: 18px;
         font-weight: 700;
         letter-spacing: 1px;
-        padding-bottom: 30px;
+        padding-bottom: 5px;
         border-bottom: 4px solid transparent;
         transition: .3s;
         &:hover {
-            color: rgb(68, 68, 201);
-            border-bottom: 4px solid rgb(68, 68, 201);
+            color: $primary-color;
+            border-bottom: 4px solid $primary-color
         }
     }
     &__menu-list-drop {
@@ -145,8 +151,8 @@
         visibility: visible;
     }
     &__menu-list-drop:hover .header__menu-link {
-        color: rgb(68, 68, 201);
-        border-bottom: 4px solid rgb(68, 68, 201);
+        color: $primary-color;
+        border-bottom: 4px solid $primary-color;
     }
     &__menu-list-drop::after {
         content: '';
@@ -159,7 +165,7 @@
     }
     &__menu-list-drop:hover::after{
         transform: rotate(90deg);
-        border-color:  transparent  transparent transparent rgb(68, 68, 201);
+        border-color:  transparent  transparent transparent $primary-color;
     }
     &__content-inner {
         text-align: center;
@@ -216,5 +222,13 @@
     }
 }
 
+.header__menu-link.header__menu-link--active {
+    color: #182e53;
+    border-bottom: 4px solid #182e53
+}
+.header__menu-link.header__menu-link--selected {
+    color: #182e53;
+    border-bottom: 4px solid #182e53
+}
 
 

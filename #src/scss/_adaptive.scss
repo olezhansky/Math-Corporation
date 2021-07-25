@@ -122,6 +122,9 @@
 }
 @media(max-width: 670px) {
     .header {   
+        &__content-slider{
+            padding-top: 25%;
+        }
         &__title {
             margin-top: 50px;
             font-size: 25px;

@@ -5,10 +5,10 @@
     const BACKGROUND_COLOR_TAB_1= '#4965a6';
     const BACKGROUND_COLOR_TAB_2 = '#F8FCFE';
     function changeTabsOnClick(event) {
-        if (event.target.className == 'services__menu-item') {
+        if (event.target.id == 'services__menu-item') {
             const dataTabMenu = event.target.getAttribute('data-tab');
             const tabContentItem = document.querySelectorAll('.services__menu-content-item');
-            const tabsTitle = document.querySelectorAll('.services__menu-item');
+            const tabsTitle = document.querySelectorAll('#services__menu-item');
             for (let item of tabsTitle) {
                 item.classList.remove('services__menu-item--active');
             }
