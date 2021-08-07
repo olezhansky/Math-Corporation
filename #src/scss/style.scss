@@ -31,7 +31,6 @@ a {
     position: relative;
     font-family: $secondary-font;
     letter-spacing: 1.5px;
-
     &::after {
         content: '';
         position: absolute;
@@ -71,6 +70,7 @@ a {
 @import "_services.scss";
 // Contacts
 @import "_contacts.scss";
+@import "_map.scss";
 // Footer
 @import "_footer.scss";
 

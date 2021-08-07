@@ -1,25 +1,68 @@
+// .schedule {
+//     padding: 25px 0;
+//     text-align: center;
+//     &__table {
+//         margin: 50px auto 0;
+//         border: 5px solid $third-color;
+//     }
+//     &__table-header {
+//         font-size: 32px;
+//         line-height: 36px;
+//         font-weight: 700;
+//         background-color: lightgrey;
+//     }
+//     &__table-header th {
+//         padding: 20px 30px;
+//         border: 2px solid grey;
+//     }
+//     &__table-main td {
+//         padding: 20px 30px;
+//         border: 2px solid grey;
+//     }
+//     &_table-main--col-1 {
+//         background-color: lightblue;
+//     }
+// }
 .schedule {
-    padding: 25px 0;
-    text-align: center;
-    &__table {
-        margin: 50px auto 0;
-        border: 5px solid $third-color;
+    padding: 90px 0;
+    &__accordion {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
     }
-    &__table-header {
-        font-size: 32px;
-        line-height: 36px;
-        font-weight: 700;
-        background-color: lightgrey;
+    &__item {
+       max-width: 400px;
     }
-    &__table-header th {
-        padding: 20px 30px;
-        border: 2px solid grey;
+    &__item-title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      color: $primary-color;
+      cursor: pointer;
+      padding: 5px 30px;
+      box-shadow: 4px 4px 5px 4px $primary-color;
     }
-    &__table-main td {
-        padding: 20px 30px;
-        border: 2px solid grey;
-    }
-    &_table-main--col-1 {
-        background-color: lightblue;
+}
+
+.schedule__panel {
+    margin-top: 15px;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.schedule__panel-item {
+    display: flex;
+    justify-content: space-between;
+}
+.schedule__panel-item {
+    p {
+        font-size: 20px;
+        line-height: 22px;
+
     }
 }

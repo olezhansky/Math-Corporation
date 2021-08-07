@@ -1,19 +1,17 @@
 .process {
     padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
     background-color: #fff;
     &__content {
-        margin-top: 100px;
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
     }
     &__img {
-        max-width: 350px;
-        height: 350px;
+        max-width: 280px;
+        height: 280px;
     }
-   
     &__text {
         margin-top: 40px;
         margin-left: 20px;

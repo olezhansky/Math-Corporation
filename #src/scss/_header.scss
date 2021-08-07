@@ -15,6 +15,10 @@
     &__logo {
         padding-left: 15px;
     }
+    &__logo-img {
+       max-width: 150px;
+       max-height: 80px;
+    }
     &__top {
         background-color:rgba(73, 72, 72, 0.9);
         position: fixed;
@@ -29,7 +33,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0 5px;
         position: relative;
        
     }
@@ -132,15 +135,17 @@
         border-top: 20px solid transparent;
     }
     &__menu-drop &__menu-drop-item {
-        padding: 15px 100px 15px 20px;
         display: block;
         background-color: grey;
         border-bottom: 2px solid blue;
-        padding-left: 20px;
         transition: 0.3s;
+        a {
+            display: block;
+            padding: 15px 100px 15px 20px;
+        }
     }
     &__menu-drop &__menu-drop-item:hover {
-        padding-left: 40px;
+        padding-left: 20px;
     }
     &__menu-drop &__menu-drop-item:last-child {
         border-bottom: none;
@@ -169,16 +174,17 @@
     }
     &__content-inner {
         text-align: center;
+        padding-top: 12%;
     }
     &__content-slider {
-        padding-top: 13%;
+        margin-top: 20px;
         width: 100%;
         height: 100%;
         overflow: hidden;
     }
     &__title {
         padding-top: 10px;
-        font-size: 50px;
+        font-size: 30px;
         line-height: 65px;
         font-weight: 700;
         text-transform: uppercase;  
@@ -189,13 +195,28 @@
         text-align: center;
         font-weight: 700;
         margin-bottom: 20px;
+        color: #fff;
     }
     &__subtitle {
+        padding-top: 13%;
         font-size: 40px;
         line-height: 65px;
         font-weight: 700;
         text-transform: uppercase;
         color: rgb(223, 206, 206);
+    }
+    &__subtitle1 {
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 700; 
+        color: #fff;
+    }
+    &__subtitle2 {
+        margin-top: 15px;
+        font-size: 45px;
+        line-height: 65px;
+        font-weight: 700; 
+        color: #000;
     }
     &__subtitle-subject {
         font-size: 60px;
