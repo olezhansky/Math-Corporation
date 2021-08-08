@@ -20,10 +20,14 @@ const langArr = {
       ua: "Відгуки",
     },
     menu6: {
+      ru: "Расписание",
+      ua: "Розклад",
+    },
+    menu7: {
       ru: "Контакты",
       ua: "Контакти",
     },
-    menu7: {
+    menu8: {
       ru: "Информация",
       ua: "Інформація",
     },
@@ -272,7 +276,7 @@ const langArr = {
   const dropdownList = document.querySelector(".dropdown__list");
   // const dropdownInput = document.querySelector(".dropdown_input");
   
-  const allLang = ["ru", "ua"];
+  const allLang = ["ua", "ru"];
   // location.href = window.location.pathname + "#en";
   
   dropdownBtn.addEventListener("click", (event) => {
@@ -283,9 +287,7 @@ const langArr = {
   const changeURLLanguage = (e) => {
     e.stopPropagation();
     let lang = e.target.dataset.value;
-    console.log(lang)
     location.href = window.location.pathname + "#" + lang;
-    console.log(location.href)
     dropdownList.classList.toggle("show");
     changeLanguage();
   };
@@ -307,7 +309,7 @@ const langArr = {
     let hash = window.location.hash;
     hash = hash.substr(1);
     if (!allLang.includes(hash)) {
-      location.href = window.location.pathname + "#ru";
+      location.href = window.location.pathname + "#ua";
       location.reload();
     }
   
@@ -319,7 +321,6 @@ const langArr = {
           element.textContent = langArr[key][hash];
         }
         element.setAttribute('placeholder', langArr[key][hash]);
-        console.log(element.textContent )
       }
     }
   }

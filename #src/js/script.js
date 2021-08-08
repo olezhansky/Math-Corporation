@@ -8,5 +8,7 @@
 @@include('_burgerMenu.js')
 @@include('jquery.fancybox.js')
 @@include('_language.js')
+@@include('_sendToEmail.js')
+@@include('_jquery.formstyler.js')
 
 

@@ -5,14 +5,20 @@
         </div>
         <div class="contacts__content">
             <div class="contacts__form">
-                <form>
+                <form action="">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Mathcorporation">
+                    <input type="hidden" name="admin_email" value="mathcorp.lv@gmail.com">
+                    <input type="hidden" name="form_subject" value="application">
+                    <!-- END Hidden Required Fields -->
+
                     <h4 class="contacts__form-title lng-contactsText1">Залишились питання?</h4>
                     <p class="contacts__form-text lng-contactsText2">Ми обов'язково зателефонуємо Вам протягом двох днів</p>
                     <div class="contacts__form-line">
-                    <input class="contacts__form-input lng-contactsPlaceholder1" placeholder="Ваше ім'я" type="text">
-                    <input class="contacts__form-input lng-contactsPlaceholder2" placeholder="Ваш телефон" type="phone">
+                    <input name="name" type="text" class="contacts__form-input lng-contactsPlaceholder1" placeholder="Ваше ім'я" type="text">
+                    <input name="phone" type="text" class="contacts__form-input lng-contactsPlaceholder2" placeholder="Ваш телефон" type="phone">
                     </div>
-                    <textarea class="contacts__form-textarea lng-contactsPlaceholder3" placeholder="Що Вас цікавить?"></textarea>
+                    <textarea name="messages" class="contacts__form-textarea lng-contactsPlaceholder3" placeholder="Що Вас цікавить?"></textarea>
                     <button class="contacts__form-btn lng-contactsButton" type="submit">Відправити</button>
                 </form>
             </div>
@@ -25,7 +31,7 @@
                         </a>
                      </li>
                     <li><a class="contacts__list-link footer__email" href="mailto:mathcorp.lv@gmail.com">
-                        <i class="fas fa-envelope"></i>layout585@gmail.com</a>
+                        <i class="fas fa-envelope"></i>mathcorp.lv@gmail.com</a>
                     </li>
                     <li><a class="contacts__list-link contacts__adress" href="#map1">
                         <i class="fas fa-map-marker-alt"></i>

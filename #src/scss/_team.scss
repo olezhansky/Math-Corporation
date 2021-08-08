@@ -40,11 +40,13 @@
     }
     &__item-img {
         margin-top: 10px;
-        max-width: 160px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
     }
     &__item-text {
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding: 0 10px;
         font-size: 14px;
         line-height: 18px;
